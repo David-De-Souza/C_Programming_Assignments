@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "stdio.h": "c",
-        "solution.h": "c"
+        "solution.h": "c",
+        "tuple": "c",
+        "utility": "c"
     }
 }

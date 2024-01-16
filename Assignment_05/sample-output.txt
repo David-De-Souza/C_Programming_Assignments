@@ -1,0 +1,10 @@
+Test Case 1: Adding elements to the vector
+vector 1: 0 2 4 6 8 10 12 14 16 18 
+
+Test Case 2: Accessing elements in the vector
+vector 2: 0 3 6 9 12 
+Element at index 2: 6
+
+Test Case 3: Resizing of the vector
+vector 3: 0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 
+

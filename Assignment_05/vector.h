@@ -43,6 +43,15 @@ void PushBack(int** vector, size_t* size, size_t* capacity, int value);
 int GetElement(const int* vector, size_t size, size_t index);
 
 /*!
+    @fn DeleteVector(int* vector)
+
+    @brief This function frees up the heap allocation for the vector
+
+    @param vector       A pointer to the vector in memory
+*/
+void DeleteVector(int* vector);
+
+/*!
     @fn PrintVector(const int* vector, size_t size)
 
     @brief A helper function to iterate over the elements of the vector and print them
@@ -51,12 +60,3 @@ int GetElement(const int* vector, size_t size, size_t index);
     @param size         The current size of the created vector
 */
 void PrintVector(const int* vector, size_t size);
-
-/*!
-    @fn DeleteVector(int* vector)
-
-    @brief This function frees up the heap allocation for the vector
-
-    @param vector       A pointer to the vector in memory
-*/
-void DeleteVector(int* vector);

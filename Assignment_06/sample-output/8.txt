@@ -1,0 +1,22 @@
+Soap added successfully.
+Shampoo added successfully.
+Toothpaste added successfully.
+Comb added successfully.
+
+Displaying Product Names:
+Comb
+Shampoo
+Soap
+Toothpaste
+
+Comb removed successfully.
+
+Product found: Toothpaste
+
+Soap removed successfully.
+
+Comb not found.
+
+Displaying Product Names:
+Shampoo
+Toothpaste

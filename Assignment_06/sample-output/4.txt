@@ -1,0 +1,7 @@
+Soap added successfully.
+Shampoo added successfully.
+Toothpaste added successfully.
+Comb added successfully.
+Detergent added successfully.
+
+Product found: Shampoo

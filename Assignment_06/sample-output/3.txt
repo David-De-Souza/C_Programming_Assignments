@@ -1,0 +1,12 @@
+Soap added successfully.
+Shampoo added successfully.
+Toothpaste added successfully.
+Comb added successfully.
+Detergent added successfully.
+
+Displaying Product Names:
+Comb
+Detergent
+Shampoo
+Soap
+Toothpaste

@@ -1,0 +1,11 @@
+Soap added successfully.
+Shampoo added successfully.
+Toothpaste added successfully.
+Comb added successfully.
+Detergent added successfully.
+Sunscreen added successfully.
+Razer added successfully.
+Moisturizer added successfully.
+Floss added successfully.
+Toothbrush added successfully.
+Maximum number of products reached.

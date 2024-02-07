@@ -2,11 +2,11 @@
 
 #include <stdio.h>
 
-struct InputData
+typedef struct _FileData
 {
     int count;
     char** data;
-};
+} FileData;
 
-struct InputData LoadInputData(char* filePath);
-void FreeInputData(struct InputData input);
+FileData LoadInputData(char* filePath);
+void FreeInputData(FileData data);

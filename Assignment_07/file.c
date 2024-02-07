@@ -5,7 +5,7 @@
 #define MAX_CHAR_COUNT 20
 #define MAX_INSTRUCTIONS 30
 
-struct InputData LoadInputData(char* filePath)
+FileData LoadInputData(char* filePath)
 {
     FILE* pFile;
     pFile = fopen(filePath, "r");
@@ -23,18 +23,18 @@ struct InputData LoadInputData(char* filePath)
     }
     fclose(pFile);
 
-    struct InputData input;
-    input.count = index;
-    input.data = input_data;
+    FileData data;
+    data.count = index;
+    data.data = input_data;
 
-    return input;
+    return data;
 }
 
-void FreeInputData(struct InputData input)
+void FreeInputData(FileData data)
 {
-    for (int i = 0; i < input.count; ++i)
+    for (int i = 0; i < data.count; ++i)
     {
-        free(input.data[i]);
+        free(data.data[i]);
     }
-    free(input.data);
+    free(data.data);
 }

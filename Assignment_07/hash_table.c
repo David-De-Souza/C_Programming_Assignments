@@ -13,12 +13,12 @@ int HashFunction(const char *key)
 }
 
 // Function to insert a key-value pair into the hash table
-void Insert(struct HashTable *hashtable, const char *key, int value)
+void Insert(HashTable *hashtable, const char *key, int value)
 {
     int index = HashFunction(key);
 
     // Create a new node
-    struct Node *newNode = (struct Node *)malloc(sizeof(struct Node));
+    Node *newNode = (Node *)malloc(sizeof(Node));
     if (newNode == NULL)
     {
         printf("Memory allocation failed");
@@ -43,12 +43,12 @@ void Insert(struct HashTable *hashtable, const char *key, int value)
 }
 
 // Function to retrieve the value associated with a key from the hash table
-int Get(struct HashTable *hashtable, const char *key)
+int Get(HashTable *hashtable, const char *key)
 {
     int index = HashFunction(key);
 
     // Search for the key in the linked list at the specified index
-    struct Node *current = hashtable->table[index];
+    Node *current = hashtable->table[index];
     while (current != NULL)
     {
         if (strcmp(current->key, key) == 0)
@@ -62,12 +62,12 @@ int Get(struct HashTable *hashtable, const char *key)
     return -1;
 }
 
-void Print(struct HashTable* hashtable)
+void Print(HashTable* hashtable)
 {
     for (int i = 0; i < TABLE_SIZE; ++i)
     {
         printf("[%d]", i);
-        struct Node* current = hashtable->table[i];
+        Node* current = hashtable->table[i];
 
         while (current)
         {
@@ -78,12 +78,12 @@ void Print(struct HashTable* hashtable)
     }
 }
 
-void Delete(struct HashTable* hashtable)
+void Delete(HashTable* hashtable)
 {
     for (int i = 0; i < TABLE_SIZE; ++i)
     {
-        struct Node* current = hashtable->table[i];
-        struct Node* previous = NULL;
+        Node* current = hashtable->table[i];
+        Node* previous = NULL;
 
         while (current)
         {

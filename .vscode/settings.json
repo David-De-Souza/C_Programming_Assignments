@@ -3,6 +3,8 @@
         "stdio.h": "c",
         "solution.h": "c",
         "tuple": "c",
-        "utility": "c"
+        "utility": "c",
+        "file.h": "c",
+        "credentials.h": "c"
     }
 }

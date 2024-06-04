@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "node.h": "c",
+        "initializer_list": "c",
+        "list": "c",
+        "type_traits": "c",
+        "xutility": "c",
+        "pathfinding.h": "c",
+        "windows.h": "c",
+        "map": "c",
+        "conio.h": "c",
+        "game.h": "c",
+        "map.h": "c",
+        "xstring": "c"
+    }
+}

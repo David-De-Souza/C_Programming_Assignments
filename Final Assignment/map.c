@@ -5,21 +5,17 @@
 
 Map CreateMap(int w, int h)
 {
-    Map newMap;
-    newMap.data = (char*)calloc((size_t)(w * h), sizeof(char));
-    newMap.width = w;
-    newMap.height = h;
-    return newMap;
+
 }
 
 int GetValueAtPosition(Map* map, int x, int y)
 {
-    return (int)map->data[map->width * y + x];
+
 }
 
 void SetValueAtPosition(Map* map, int x, int y, int value)
 {
-    map->data[map->width * y + x] = (char)value;
+
 }
 
 void DisplayMap(Map* map)
@@ -71,5 +67,5 @@ void ClearMap(Map* map)
 
 void DeleteMap(Map* map)
 {
-    free(map->data);
+
 }
